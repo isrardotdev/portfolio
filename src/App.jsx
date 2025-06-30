@@ -300,13 +300,13 @@ function App() {
                   <div className="whitespace-nowrap textnomo">/israr-khan</div>
                 </div>
               </a>
-              <a href="https://github.com/isrark005/" target="_blank">
+              <a href="https://github.com/isrardotdev/" target="_blank">
                 {" "}
                 <div className="connect">
                   <span className="mr-[35px]">
                     <TbBrandGithubFilled />
                   </span>
-                  <div className="whitespace-nowrap">/isrark005</div>
+                  <div className="whitespace-nowrap">/isrardotdev</div>
                 </div>
               </a>
               <a href="mailto:isrark005@gmail.com" target="_blank">
@@ -317,12 +317,12 @@ function App() {
                   <div className="whitespace-nowrap">isrark005@</div>
                 </div>
               </a>
-              <a href="https://twitter.com/isrark005" target="_blank">
+              <a href="https://twitter.com/isrardotdev" target="_blank">
                 <div className="connect">
                   <span className="mr-[35px]">
                     <FaXTwitter />
                   </span>
-                  <div className="whitespace-nowrap">/isrark005</div>
+                  <div className="whitespace-nowrap">/isrardotdev</div>
                 </div>
               </a>
             </div>
