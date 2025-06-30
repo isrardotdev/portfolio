@@ -12,7 +12,6 @@ import {
   nfakImg,
   valo,
   cssEnthu,
-  resume,
 } from "./assets/imgIndex";
 import {
   LiaDownloadSolid,
@@ -140,11 +139,11 @@ function App() {
           </div>
           <div className="info-inner flex flex-nowrap items-center justify-evenly gap-3">
             <span className="ml-8">
-              Download <br />
+              View <br />
               my resume
             </span>
             <span className="rounded-full w-16 h-16 bg-[#DBFF00] text-black grid content-center transition-all duration-200 justify-center text-[32px] hover:bg-[#BEC200]">
-              <a href={resume} download="Israr Khan Resume.pdf">
+              <a href={'/ISRAR KHAN_Resume.pdf'} target="_blank">
                 <LiaDownloadSolid />
               </a>
             </span>
@@ -343,7 +342,7 @@ function App() {
               </a>
             </div>
             <div className="w-6/12">
-              <a href={resume} download="Israr Khan Resume.pdf">
+              <a href={'/ISRAR KHAN_Resume.pdf'} target="_blank">
                 <button className="border-[2px] py-5 w-[220px] rotate-[14deg] rounded-[50px] text-[28px] hover:bg-white hover:text-black transition-all duration-[250ms]">
                   Resume
                 </button>
