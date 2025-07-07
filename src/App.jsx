@@ -25,7 +25,8 @@ import {
   FaXmark,
 } from "./icons";
 import { motion, AnimatePresence } from "framer-motion";
-import { Canvas } from "./Canvas/Canvas"; //creating a small chrome's dino like game: under development
+// creating a small chrome's dino like game: under development
+// import { Canvas } from "./Canvas/Canvas";
 
 function App() {
   const [overlay, setOverlay] = useState(false);
