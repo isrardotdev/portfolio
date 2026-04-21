@@ -1,290 +1,189 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Blinker&display=swap");
-
-#root {
-  max-width: 100vw;
+/* Resume Page */
+.resume-page {
+  max-width: 720px;
   margin: 0 auto;
-  font-family: "Blinker", sans-serif;
-  background-color: #1f1f41;
-  color: #fff;
+  padding: 0 24px;
+  padding-bottom: 80px;
 }
 
-.container-custom {
-  max-width: 1366px;
-  margin: 0 auto;
-}
-
-.animate-gradient {
-  background: linear-gradient(
-    180deg,
-    rgba(77, 244, 255, 1) 0%,
-    rgba(219, 255, 0, 1) 33%,
-    rgba(77, 244, 255, 1) 66%,
-    rgba(219, 255, 0, 1) 100%
-  );
-  background-size: 100% 250%;
-  background-position-y: top;
-  animation: 1s linear 1s infinite running trippy;
-}
-
-@keyframes trippy {
-  from {
-    background-position-y: top;
-  }
-  to {
-    background-position-y: bottom;
-  }
-}
-
-h1,
-.heading {
-  font-family: "Anton", sans-serif;
-  cursor: default;
-}
-
-.first-fold {
-  background-image: url(./assets/hero-bg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.info .info-inner:not(.info .info-inner:nth-of-type(4)) {
-  border: 1px solid #fff;
-  padding: 15px 0px 15px 0px;
-  border-radius: 58px;
-  font-size: 28px;
-  width: 24%;
-  min-height: 120px;
+.resume-topbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  line-height: 1em;
+  padding: 28px 0;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
 }
 
-.info .info-inner:nth-of-type(2) {
-  margin: auto -60px;
+.nav-logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.5px;
 }
 
-.info-inner-box {
-  width: fit-content;
+.resume-pdf-link {
+  font-size: 12px;
+  color: var(--accent);
+  transition: opacity 0.2s;
 }
 
-p {
-  font-size: 20px;
-  cursor: default;
+.resume-pdf-link:hover {
+  opacity: 0.7;
 }
 
-.inner-bar {
-  width: 60%;
-  animation: width-increase 4s ease-in-out infinite alternate;
+.resume-content {
+  padding-top: 56px;
 }
 
-@keyframes width-increase {
-  to {
-    width: 100%;
-  }
+.resume-header {
+  margin-bottom: 48px;
 }
 
-.bar-pusher {
-  animation: pusher 4s ease-in-out infinite alternate;
-  animation-delay: 4s;
+.resume-name {
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
 }
 
-@keyframes pusher {
-  to {
-    width: calc(100% - 60px);
-  }
+.resume-contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.metal-spining {
-  animation-duration: 10s !important;
+.resume-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--muted);
+  transition: color 0.2s;
 }
 
-.overlay {
-  animation-name: fadin;
-
-  animation-duration: 500ms;
+.resume-contact-link:hover {
+  color: var(--text);
 }
 
-@keyframes fadin {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
-  }
+.resume-section {
+  padding: 36px 0;
+  border-top: 1px solid var(--border);
 }
 
-.skills .skill {
-  width: 14.28%;
-  aspect-ratio: 1/1;
-  background-color: white;
-  border-radius: 100%;
+.resume-section-label {
+  font-size: 10px;
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.resume-body {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.resume-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resume-skill-row {
   display: grid;
-  align-content: center;
+  grid-template-columns: 90px 1fr;
+  gap: 16px;
+  font-size: 13px;
 }
 
-/* .background-image {
-  background-image: url(./assets/skill-bg.png);
-  background-size: 900px;
-  background-repeat: no-repeat;
-  background-position: 429px -105px;
-} */
-.background-image {
-  width: 100%;
-  top: -336px;
-  left: 199px;
-  animation-duration: 90s !important;
-  z-index: 0;
+.resume-skill-label {
+  color: var(--text);
+  font-size: 12px;
 }
 
-.project {
-  margin-bottom: 80px;
-  background-image: url(./assets/project-bg.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  transition: all 250ms ease-in-out;
-  background-position: center center;
-}
-
-.project:hover {
-  background-size: 120%;
-}
-
-.project-bottom img {
-  border-radius: 35px 35px 200px 35px;
-  position: relative;
-}
-
-.project-bottom {
-  position: relative;
-}
-
-.project-bottom::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 150px;
-  border-radius: 50px;
-  height: 40px;
-  background-color: #dbff00;
-  top: -15px;
-  left: 25px;
-}
-.project-go-btn {
-  transition: all 100ms linear;
-}
-.project-link {
-  transition: all 100ms linear;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.project-link:hover .project-go-btn {
-  transform: translate(60px);
-}
-
-.project-link::before {
-  content: "\27F6";
-  font-size: 24px;
-  position: absolute;
-  left: -28px;
-  top: 25px;
-  transition: all 100ms linear;
-}
-
-.project-link:hover:before {
-  left: 30px;
-}
-
-.project-link:hover ~ .project-bottom:before {
-  left: 250px;
-}
-
-.game-section {
-  background-image: url(./assets/neon-base.png);
-}
-
-.connect {
-  width: 100px;
-  height: 100px;
-  border: 2px solid #fff;
-  border-radius: 50px;
+.resume-entries {
   display: flex;
-  align-items: center;
-  font-size: 28px;
-  padding-left: 35px;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  transition: width 250ms linear;
+  flex-direction: column;
+  gap: 28px;
 }
 
-.connect:hover {
-  width: 250px;
+.resume-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
 }
 
-.footer {
-  border-radius: 35px 35px 200px 35px;
+.resume-entry-title {
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 700;
 }
 
-.menu-items {
-  width: 250px;
-  background: #1f1f41;
-  padding: 15px;
-  border-radius: 8px;
+.resume-project-link {
+  color: var(--accent);
+  transition: opacity 0.2s;
 }
 
-.menu-items > li:not(li:last-child) {
-  margin-bottom: 10px;
-}
-.menu-items > li {
-  padding: 5px;
-  padding-left: 10px;
-  border-radius: 5px;
-  transition: all 250ms linear;
-}
-.menu-items > li a {
-  display: block;
+.resume-project-link:hover {
+  opacity: 0.7;
 }
 
-.menu-items > li:hover {
-  background-color: #ffffff65;
+.resume-entry-period {
+  font-size: 11px;
+  color: var(--muted);
+  white-space: nowrap;
 }
 
-/* responsive css */
+.resume-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+}
 
-@media not all and (min-width: 768px) {
-  .info .info-inner:not(.info .info-inner:nth-of-type(4)) {
-    width: 100%;
-    margin-bottom: -10px;
+.resume-bullets li {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.8;
+  padding-left: 16px;
+  position: relative;
+}
+
+.resume-bullets li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.resume-stack {
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.3px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .resume-skill-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 
-  .info .info-inner:nth-of-type(4) {
-    margin-top: 40px;
+  .resume-entry-header {
+    flex-direction: column;
+    gap: 2px;
   }
 
-  .container-custom {
-    padding: 0px 20px;
-  }
-
-  .skills .skill {
-    width: 140px;
-  }
-
-  .background-image {
-    width: 500px !important;
-    top: 536px;
-    left: 10px;
-  }
-
-  .project {
-    background-size: cover !important;
-  }
-
-  .project-bottom img {
-    border-radius: 25px 25px 100px 25px;
-  }
-
-  .connect:hover {
-    width: 140px;
+  .resume-name {
+    letter-spacing: -1px;
   }
 }
