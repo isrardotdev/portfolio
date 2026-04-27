@@ -9,8 +9,8 @@ const experience = [
     company: "TAG Capital",
     period: "Dec 2024 – Present",
     bullets: [
-      "Architected and implemented a deal evaluation system for investors — multi-step forms, smart autofill from pitch decks, and real-time collaboration using WebSockets.",
-      "Built dynamic, responsive interfaces using React, Redux, TypeScript, and Tailwind CSS.",
+      "Owned the end-to-end frontend experience, defining user flows, shaping product interactions, and collaborating with backend to structure APIs aligned with real user needs.",
+      "Worked closely with product and AI teams to design and build a deal evaluation system, driving features from concept to implementation with a focus on usability, scalability, and real-time collaboration.",
     ],
   },
   {
