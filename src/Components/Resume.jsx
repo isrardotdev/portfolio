@@ -175,8 +175,32 @@ export default function Resume() {
             <div className="resume-entry">
               <div className="resume-entry-header">
                 <a
-                  href="https://www.stickerizz.com/"
+                  href="https://wanderpin.app"
                   target="_blank"
+                  rel="noreferrer"
+                  className="resume-entry-title resume-project-link"
+                >
+                  WanderPin ↗
+                </a>
+              </div>
+              <p className="resume-body" style={{ marginBottom: "10px" }}>
+                Mobile travel app that saves places from Instagram Reels. Share
+                a reel and a background pipeline transcribes it, works out the
+                location, and pins it on your personal world map. An AI planner
+                then builds trip itineraries from your saved pins. Live on
+                Android.
+              </p>
+              <p className="resume-stack">
+                React Native · Expo · TypeScript · Node.js · Express ·
+                PostgreSQL · Prisma · BullMQ · Redis · MapLibre · Gemini
+              </p>
+            </div>
+            <div className="resume-entry">
+              <div className="resume-entry-header">
+                <a
+                  href="https://stickerizz.com"
+                  target="_blank"
+                  rel="noreferrer"
                   className="resume-entry-title resume-project-link"
                 >
                   Stickerizz ↗
@@ -191,20 +215,6 @@ export default function Resume() {
               <p className="resume-stack">
                 React · TypeScript · Node.js · Express · PostgreSQL · Prisma ·
                 Canvas API · SVG · Docker · Nginx
-              </p>
-            </div>
-            <div className="resume-entry">
-              <div className="resume-entry-header">
-                <span className="resume-entry-title">
-                  GitHub Profile Comparison
-                </span>
-              </div>
-              <p className="resume-body" style={{ marginBottom: "10px" }}>
-                Web app to compare two GitHub profiles — displays a comparison
-                chart and a meme based on commit count delta.
-              </p>
-              <p className="resume-stack">
-                React · Chart.js · GitHub API · Canvas · Tailwind CSS
               </p>
             </div>
           </div>
