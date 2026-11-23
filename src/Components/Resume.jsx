@@ -95,11 +95,11 @@ export default function Resume() {
               <TbBrandGithubFilled /> isrardotdev
             </a>
             <a
-              href="https://www.linkedin.com/in/israr-khan-a8824ba4/"
+              href="https://www.linkedin.com/in/isrardotdev/"
               target="_blank"
               className="resume-contact-link"
             >
-              <FaLinkedinIn /> israr-khan
+              <FaLinkedinIn /> isrardotdev
             </a>
             <a
               href="https://twitter.com/isrardotdev"
